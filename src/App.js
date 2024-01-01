@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addTodo, removeTodo, editTodo } from "./action";
@@ -24,7 +23,7 @@ const App = () => {
     if (editId !== null && editText.trim() !== "") {
       dispatch(editTodo(editId, editText));
       setEditId(null);
-      setEditText(""); // Reset the edit text after saving
+      setEditText(""); 
     }
   };
 
@@ -54,7 +53,7 @@ const App = () => {
               <>
                 <input
                   type="text"
-                  value={editText} // Use editText state here
+                  value={editText} 
                   onChange={(e) => setEditText(e.target.value)}
                   className="edit-input"
                 />
