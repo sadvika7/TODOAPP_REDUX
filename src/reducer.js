@@ -1,4 +1,3 @@
-// reducer.js
 import { ADD_TODO, REMOVE_TODO, EDIT_TODO } from "./action";
 
 const initialState = {
